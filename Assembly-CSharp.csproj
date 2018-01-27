@@ -826,6 +826,7 @@
      <Compile Include="Assets\Scripts\ZombieHiveBehaviour.cs" />
      <Compile Include="Assets\showRaycast.cs" />
      <Compile Include="Assets\victoryAndLose.cs" />
+     <Compile Include="Assets\WinScreenBehavior.cs" />
      <None Include="Assets\PlayMaker\Templates\readme.txt" />
      <None Include="Assets\PlayMaker\Readme.txt" />
      <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />

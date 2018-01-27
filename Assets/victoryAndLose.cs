@@ -9,7 +9,7 @@ public class victoryAndLose : MonoBehaviour
 {
     public int humanCount;
     public int humanDead;
-
+    public GameObject victoryScreen;
 
 
     void OnGUI()
@@ -31,13 +31,15 @@ public class victoryAndLose : MonoBehaviour
         if (FsmVariables.GlobalVariables.GetFsmInt("humans").Value == 0)
         {
             Debug.Log("Ganaste");
-
+            victoryScreen.GetComponent<MeshRenderer>().enabled = true;
+            victoryScreen.GetComponent<MeshCollider>().enabled = true;
         }
 
     }
 
     public void Zombified()
     {
+        humanCount--;
         FsmVariables.GlobalVariables.GetFsmInt("humans").Value--;
         Debug.Log("Zombificado");
     }
