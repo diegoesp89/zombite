@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Obstacle
   - Hitbox
+  - Right
+  - Left
   layers:
   - Default
   - TransparentFX
