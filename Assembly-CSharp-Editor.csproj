@@ -225,17 +225,17 @@
  <Reference Include="UnityEditor.Facebook.Extensions">
  <HintPath>D:/Program Files/Unity/Editor/Data/PlaybackEngines/Facebook/UnityEditor.Facebook.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="PlayMakerEditorResources">
- <HintPath>D:/Users/Strife/Documents/Zombite/Assets/PlayMaker/Editor/PlayMakerEditorResources.dll</HintPath>
- </Reference>
- <Reference Include="PlayMakerEditor">
- <HintPath>D:/Users/Strife/Documents/Zombite/Assets/PlayMaker/Editor/PlayMakerEditor.dll</HintPath>
+ <Reference Include="ConditionalExpression">
+ <HintPath>D:/Users/Strife/Documents/Zombite/Assets/PlayMaker/ConditionalExpression.dll</HintPath>
  </Reference>
  <Reference Include="ConditionalExpressionEditor">
  <HintPath>D:/Users/Strife/Documents/Zombite/Assets/PlayMaker/Editor/ConditionalExpressionEditor.dll</HintPath>
  </Reference>
- <Reference Include="ConditionalExpression">
- <HintPath>D:/Users/Strife/Documents/Zombite/Assets/PlayMaker/ConditionalExpression.dll</HintPath>
+ <Reference Include="PlayMakerEditor">
+ <HintPath>D:/Users/Strife/Documents/Zombite/Assets/PlayMaker/Editor/PlayMakerEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMakerEditorResources">
+ <HintPath>D:/Users/Strife/Documents/Zombite/Assets/PlayMaker/Editor/PlayMakerEditorResources.dll</HintPath>
  </Reference>
  <Reference Include="PlayMaker">
  <HintPath>D:/Users/Strife/Documents/Zombite/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
