@@ -822,6 +822,7 @@
      <Compile Include="Assets\PlayMaker\Actions\Vector3\Vector3Subtract.cs" />
      <Compile Include="Assets\PlayMaker\Actions\Web\WWWObject.cs" />
      <Compile Include="Assets\PlayMaker\UpdateHelper.cs" />
+     <Compile Include="Assets\Scripts\ZombieHiveBehaviour.cs" />
      <Compile Include="Assets\showRaycast.cs" />
      <None Include="Assets\PlayMaker\Templates\readme.txt" />
      <None Include="Assets\PlayMaker\Readme.txt" />

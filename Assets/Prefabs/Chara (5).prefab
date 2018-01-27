@@ -1679,7 +1679,7 @@ MonoBehaviour:
         linkConstraint: 0
         colorIndex: 0
       - fsmEvent:
-          name: noClicksLeft
+          name: cantTurn
           isSystemEvent: 0
           isGlobal: 0
         toState: Final
@@ -1688,13 +1688,15 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
         - HutongGames.PlayMaker.Actions.IntCompare
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 09faa102
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000004000000
+        actionHashCodes: a4c8bf0009faa102
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -1723,31 +1725,43 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        fsmBoolParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: isZombieVal
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - noClicksLeft
-        - noClicksLeft
+        - cantTurn
+        - 
+        - cantTurn
+        - cantTurn
         - becomeZombie
-        byteData: 00
+        byteData: 0000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 100000001000000017000000170000001700000001000000
+        paramDataType: 11000000170000001700000001000000100000001000000017000000170000001700000001000000
         paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
         - integer1
         - integer2
         - equal
         - lessThan
         - greaterThan
         - everyFrame
-        paramDataPos: 000000000100000000000000010000000200000000000000
-        paramByteDataSize: 000000000000000000000000000000000000000001000000
+        paramDataPos: 00000000000000000100000000000000000000000100000002000000030000000400000001000000
+        paramByteDataSize: 00000000000000000000000001000000000000000000000000000000000000000000000001000000
     - name: Final
       description: 
       colorIndex: 0
@@ -1810,10 +1824,10 @@ MonoBehaviour:
     - name: becomeZombie
       isSystemEvent: 0
       isGlobal: 0
-    - name: checkInfectiousness
+    - name: cantTurn
       isSystemEvent: 0
       isGlobal: 0
-    - name: noClicksLeft
+    - name: checkInfectiousness
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions: []

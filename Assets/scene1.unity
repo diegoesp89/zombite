@@ -43,7 +43,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -89,7 +89,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: 2a1fde84eb6f50a4ca461d91b56bfd7c,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -165,6 +166,11 @@ Prefab:
     - target: {fileID: 114102955558318198, guid: 048acc3f02baa034f907e42522243719,
         type: 2}
       propertyPath: fsm.handleCollisionEnter
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114419477148224480, guid: 048acc3f02baa034f907e42522243719,
+        type: 2}
+      propertyPath: fsm.preprocessed
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -412,6 +418,11 @@ Prefab:
       propertyPath: m_Name
       value: Chara (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 114419477148224480, guid: 048acc3f02baa034f907e42522243719,
+        type: 2}
+      propertyPath: fsm.preprocessed
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 048acc3f02baa034f907e42522243719, type: 2}
   m_IsPrefabParent: 0
@@ -428,6 +439,7 @@ GameObject:
   - component: {fileID: 733369131}
   - component: {fileID: 733369130}
   - component: {fileID: 733369135}
+  - component: {fileID: 733369136}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -514,6 +526,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9e803731632289438b0c1a223d20fb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &733369136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 733369129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56f24025d507ea540bb92f743bccf967, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &766031604
@@ -1757,6 +1780,11 @@ Prefab:
       propertyPath: m_Name
       value: Chara (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 114419477148224480, guid: 048acc3f02baa034f907e42522243719,
+        type: 2}
+      propertyPath: fsm.preprocessed
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 048acc3f02baa034f907e42522243719, type: 2}
   m_IsPrefabParent: 0
@@ -2069,6 +2097,11 @@ Prefab:
     - target: {fileID: 1973667779359124, guid: 048acc3f02baa034f907e42522243719, type: 2}
       propertyPath: m_Name
       value: Chara (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114419477148224480, guid: 048acc3f02baa034f907e42522243719,
+        type: 2}
+      propertyPath: fsm.preprocessed
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 048acc3f02baa034f907e42522243719, type: 2}
