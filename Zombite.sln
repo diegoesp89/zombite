@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zombite", "Assembly-CSharp.csproj", "{C4669365-6206-84D8-1AEA-091817196A4E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zombite", "Assembly-CSharp.csproj", "{983E23A0-D424-EE36-D850-DD24277A134C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zombite", "Assembly-CSharp-Editor.csproj", "{935973B9-38D0-7538-8872-DB2CB03D00B8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zombite", "Assembly-CSharp-Editor.csproj", "{AC33C0A2-3EDA-F9D5-043D-40C84360D02D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C4669365-6206-84D8-1AEA-091817196A4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4669365-6206-84D8-1AEA-091817196A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4669365-6206-84D8-1AEA-091817196A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4669365-6206-84D8-1AEA-091817196A4E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{935973B9-38D0-7538-8872-DB2CB03D00B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{935973B9-38D0-7538-8872-DB2CB03D00B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{935973B9-38D0-7538-8872-DB2CB03D00B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{935973B9-38D0-7538-8872-DB2CB03D00B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{983E23A0-D424-EE36-D850-DD24277A134C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{983E23A0-D424-EE36-D850-DD24277A134C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{983E23A0-D424-EE36-D850-DD24277A134C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{983E23A0-D424-EE36-D850-DD24277A134C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC33C0A2-3EDA-F9D5-043D-40C84360D02D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC33C0A2-3EDA-F9D5-043D-40C84360D02D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC33C0A2-3EDA-F9D5-043D-40C84360D02D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC33C0A2-3EDA-F9D5-043D-40C84360D02D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
