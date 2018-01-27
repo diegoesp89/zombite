@@ -8,6 +8,7 @@ TagManager:
   - Hitbox
   - Right
   - Left
+  - Spring
   layers:
   - Default
   - TransparentFX

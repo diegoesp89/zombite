@@ -16,10 +16,6 @@ public class ZombieHiveBehaviour : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown ("space")) {
-			Debug.Log("press");
-			FsmVariables.GlobalVariables.GetFsmInt("clicksAvailable").Value = clicks;
-			SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
-		}
+		
 	}
 }

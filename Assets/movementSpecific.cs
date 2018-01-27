@@ -1,0 +1,27 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class movementSpecific : MonoBehaviour {
+	public float force = 1;
+	// Use this for initialization
+	void Start () {
+
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+
+	void FixedUpdate()
+	{
+		 if (Input.GetKeyDown (KeyCode.Space)){
+			 GetComponent<Rigidbody>().AddForce(new Vector3(0, force, 0), ForceMode.Impulse);
+   		 }
+	}
+
+	public void Jump(){
+		 GetComponent<Rigidbody>().AddForce(new Vector3(0, force, 0), ForceMode.Impulse);
+	}
+}
