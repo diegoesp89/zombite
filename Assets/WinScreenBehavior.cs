@@ -17,6 +17,7 @@ public class WinScreenBehavior : MonoBehaviour
     public AudioClip transformationSound;
     public AudioClip plankSound;
     // Use this for initialization
+    public AudioClip crashSound;
     void Start()
     {
         FsmVariables.GlobalVariables.GetFsmGameObject("audioControl").Value = GameObject.FindGameObjectsWithTag("Audio")[0];
@@ -67,5 +68,10 @@ public class WinScreenBehavior : MonoBehaviour
     public void playPlankSound()
     {
         audioControl.PlayOneShot(plankSound);
+    }
+
+    public void playCrashSound()
+    {
+        audioControl.PlayOneShot(crashSound);
     }
 }

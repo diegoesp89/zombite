@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 111945620190484922}
   - component: {fileID: 82746111748393596}
   - component: {fileID: 65320440777709770}
+  - component: {fileID: 114842351811731042}
   m_Layer: 10
   m_Name: Door
   m_TagString: Obstacle
@@ -1275,7 +1276,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
 --- !u!114 &114239439010924292
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1290,3 +1291,16 @@ MonoBehaviour:
   openingDoor: {fileID: 8300000, guid: ab764efcd739e1b489e1d3420ccdeb47, type: 3}
   closingDoor: {fileID: 8300000, guid: 898df2224d598ac46aabf71de0aaab39, type: 3}
   musicControl: {fileID: 82746111748393596}
+--- !u!114 &114842351811731042
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1149502511007646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1775717093, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetFSMs:
+  - {fileID: 114195720839833744}

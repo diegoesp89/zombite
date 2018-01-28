@@ -71,6 +71,7 @@ public class victoryAndLose : MonoBehaviour
 
     public void Restart()
     {
+        
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

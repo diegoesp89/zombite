@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1836746148337388}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -2.69, y: 0, z: 0}
+  m_LocalPosition: {x: -1.6, y: -0, z: 0.89}
   m_LocalScale: {x: 0.34135848, y: 0.34135848, z: 0.34135848}
   m_Children: []
   m_Father: {fileID: 4947319705269354}
@@ -67,14 +67,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1847465795887054}
-  m_LocalRotation: {x: -0.70710677, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.0137753, y: -0.31, z: -2.81}
-  m_LocalScale: {x: 1.8927708, y: 1.201623, z: 1.201623}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: 2.25, y: -0.6, z: -2.81}
+  m_LocalScale: {x: 1.114169, y: 0.7073287, z: 0.7073287}
   m_Children:
   - {fileID: 4279428071597936}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
 --- !u!23 &23536672643772034
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -88,7 +88,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f56478cf9d02f9841bafd74b6166f429, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -247,16 +247,16 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1836746148337388}
-  m_Text: 'All humans became zombies!
+  m_Text: '
 
-    (click to continue)'
+'
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
   m_Anchor: 0
   m_Alignment: 0
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 8
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -274,11 +274,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bb41b67e9a67c043bfe6a2824881bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: scene3
+  nextScene: scene1
   musicControl: {fileID: 82525260547924964}
   MusicaInicio: {fileID: 8300000, guid: 2eb09c996a7b8b944bb0d3e5c41dac67, type: 3}
   MusicaZombies: {fileID: 8300000, guid: f890440899789974ca6683870a9efceb, type: 3}
   MusicaWin: {fileID: 8300000, guid: 118f76d4670d0da4e8d662bd43c00997, type: 3}
   doorSound: {fileID: 8300000, guid: ab764efcd739e1b489e1d3420ccdeb47, type: 3}
-  transformationSound: {fileID: 8300000, guid: b829c1abce7908e4eb0e11e9812f3fca, type: 3}
-  plankSound: {fileID: 8300000, guid: 31118b13810acb94b81aaf8516f7d409, type: 3}
+  transformationSound: {fileID: 8300000, guid: b2da597ffb1a9fa4280e1689347be70b, type: 3}
+  plankSound: {fileID: 8300000, guid: 55e653b6f2f9c91419b34f449584ef47, type: 3}
+  crashSound: {fileID: 8300000, guid: f4449cd84bb906e4eb0f3cd0c1542a68, type: 3}
