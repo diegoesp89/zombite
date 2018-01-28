@@ -1750,7 +1750,7 @@ Prefab:
     - target: {fileID: 114942220710624534, guid: dd11f9b3ec569f34e88da5b0efcc5bdc,
         type: 2}
       propertyPath: nextScene
-      value: scene4
+      value: scene2
       objectReference: {fileID: 0}
     - target: {fileID: 4947319705269354, guid: dd11f9b3ec569f34e88da5b0efcc5bdc, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x

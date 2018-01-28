@@ -433,72 +433,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 114942220710624534, guid: dd11f9b3ec569f34e88da5b0efcc5bdc,
-        type: 2}
-      propertyPath: nextScene
-      value: scene1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4947319705269354, guid: dd11f9b3ec569f34e88da5b0efcc5bdc, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4947319705269354, guid: dd11f9b3ec569f34e88da5b0efcc5bdc, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 23536672643772034, guid: dd11f9b3ec569f34e88da5b0efcc5bdc,
         type: 2}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 23698442887571984, guid: dd11f9b3ec569f34e88da5b0efcc5bdc,
+    - target: {fileID: 114942220710624534, guid: dd11f9b3ec569f34e88da5b0efcc5bdc,
         type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 102059455090300784, guid: dd11f9b3ec569f34e88da5b0efcc5bdc,
-        type: 2}
-      propertyPath: m_Text
-      value: 'YOU WIN! Thanks for playing. Click to restart.
-
-
-        Programming: Diego Espinoza (Strife)
-
-        Nicolas Huerta (Amene)
-
-
-        Art: Rodrigo Saavedra (Rodimus)
-
-
-        Music/Sound: Andres Hernandez (Andriu)'
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279428071597936, guid: dd11f9b3ec569f34e88da5b0efcc5bdc, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279428071597936, guid: dd11f9b3ec569f34e88da5b0efcc5bdc, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279428071597936, guid: dd11f9b3ec569f34e88da5b0efcc5bdc, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279428071597936, guid: dd11f9b3ec569f34e88da5b0efcc5bdc, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279428071597936, guid: dd11f9b3ec569f34e88da5b0efcc5bdc, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279428071597936, guid: dd11f9b3ec569f34e88da5b0efcc5bdc, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 2.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279428071597936, guid: dd11f9b3ec569f34e88da5b0efcc5bdc, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -1.03
+      propertyPath: nextScene
+      value: scene0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd11f9b3ec569f34e88da5b0efcc5bdc, type: 2}
@@ -2318,6 +2261,11 @@ Prefab:
       propertyPath: victoryText
       value: 
       objectReference: {fileID: 245593013}
+    - target: {fileID: 114818659833333114, guid: 0bc6d75e63a68ac4aac619aadcce2a1f,
+        type: 2}
+      propertyPath: cubeBG
+      value: 
+      objectReference: {fileID: 1083378735}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0bc6d75e63a68ac4aac619aadcce2a1f, type: 2}
   m_IsPrefabParent: 0
@@ -2784,6 +2732,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2a097277d1a853d478b1c9a7df0c82b0, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1083378735 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1372026135629592, guid: dd11f9b3ec569f34e88da5b0efcc5bdc,
+    type: 2}
+  m_PrefabInternal: {fileID: 245593010}
 --- !u!1 &1099311697
 GameObject:
   m_ObjectHideFlags: 0

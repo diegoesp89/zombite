@@ -11,6 +11,7 @@ public class victoryAndLose : MonoBehaviour
     public int humanDead;
     public GameObject victoryScreen;
     public GameObject victoryText;
+    public GameObject cubeBG;
     public int clicksAvailables;
 
     public GameObject tutorialText;
@@ -48,10 +49,16 @@ public class victoryAndLose : MonoBehaviour
             victoryScreen.GetComponent<MeshRenderer>().enabled = true;
             victoryScreen.GetComponent<MeshCollider>().enabled = true;
             victoryText.GetComponent<MeshRenderer>().enabled = true;
+
             FsmVariables.GlobalVariables.GetFsmInt("humans").Value = -1;
             if (tutorialText)
             {
                 tutorialText.GetComponent<MeshRenderer>().enabled = false;
+            }
+
+            if (cubeBG)
+            {
+                cubeBG.GetComponent<MeshRenderer>().enabled = true;
             }
         }
 
@@ -71,7 +78,7 @@ public class victoryAndLose : MonoBehaviour
 
     public void Restart()
     {
-        
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

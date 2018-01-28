@@ -29,7 +29,7 @@ public class movementSpecific : MonoBehaviour {
 	public void Death(){
 		Debug.Log("plaf, muerto");
 		//play death animation
-		System.Threading.Thread.Sleep(3000);
+		System.Threading.Thread.Sleep(2000);
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		//play game over music
 		//show game over
