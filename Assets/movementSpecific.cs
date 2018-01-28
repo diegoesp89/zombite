@@ -24,4 +24,10 @@ public class movementSpecific : MonoBehaviour {
 	public void Jump(){
 		 GetComponent<Rigidbody>().AddForce(new Vector3(0, force, 0), ForceMode.Impulse);
 	}
+
+	public void Death(){
+		//play death animation
+		//play game over music
+		//show game over
+	}
 }
