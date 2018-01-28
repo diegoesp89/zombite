@@ -89,7 +89,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d8b156106a39d974bb4b82719aa7193f, type: 2}
+  - {fileID: 2100000, guid: 179e38f950782ca44989bb0283e22653, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -125,8 +125,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.567672, z: 1}
+  m_Center: {x: 0, y: 0.283836, z: 0}
 --- !u!82 &82746111748393596
 AudioSource:
   m_ObjectHideFlags: 1

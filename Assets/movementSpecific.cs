@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class movementSpecific : MonoBehaviour {
 	public float force = 1;
@@ -26,7 +27,9 @@ public class movementSpecific : MonoBehaviour {
 	}
 
 	public void Death(){
+		Debug.Log("plaf, muerto");
 		//play death animation
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 		//play game over music
 		//show game over
 	}
