@@ -10,6 +10,7 @@ public class victoryAndLose : MonoBehaviour
     public int humanCount;
     public int humanDead;
     public GameObject victoryScreen;
+    public GameObject victoryText;
 
     public WinScreenBehavior audioRefence;
 
@@ -35,6 +36,7 @@ public class victoryAndLose : MonoBehaviour
             audioRefence.changeToWinMusic();
             victoryScreen.GetComponent<MeshRenderer>().enabled = true;
             victoryScreen.GetComponent<MeshCollider>().enabled = true;
+            victoryText.GetComponent<MeshRenderer>().enabled = true;
             FsmVariables.GlobalVariables.GetFsmInt("humans").Value = -1;
         }
 
