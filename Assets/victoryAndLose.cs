@@ -16,7 +16,7 @@ public class victoryAndLose : MonoBehaviour
     public GameObject tutorialText;
 
     public WinScreenBehavior audioRefence;
-
+    public GameObject[] gameObjects;
     void OnGUI()
     {
         Cursor.lockState = CursorLockMode.None;
@@ -29,7 +29,7 @@ public class victoryAndLose : MonoBehaviour
         FsmVariables.GlobalVariables.GetFsmGameObject("derecha").Value = GameObject.FindGameObjectsWithTag("Right")[0];
         FsmVariables.GlobalVariables.GetFsmGameObject("izquierda").Value = GameObject.FindGameObjectsWithTag("Left")[0];
         FsmVariables.GlobalVariables.GetFsmInt("clicksAvailable").Value = clicksAvailables;
-        
+
     }
 
     // Update is called once per frame
@@ -37,15 +37,22 @@ public class victoryAndLose : MonoBehaviour
     {
         if (FsmVariables.GlobalVariables.GetFsmInt("humans").Value == 0)
         {
+            gameObjects = GameObject.FindGameObjectsWithTag("CeilingTrap");
+
+            for (var i = 0; i < gameObjects.Length; i++)
+            {
+                Destroy(gameObjects[i]);
+            }
             Debug.Log("Ganaste");
             audioRefence.changeToWinMusic();
             victoryScreen.GetComponent<MeshRenderer>().enabled = true;
             victoryScreen.GetComponent<MeshCollider>().enabled = true;
             victoryText.GetComponent<MeshRenderer>().enabled = true;
             FsmVariables.GlobalVariables.GetFsmInt("humans").Value = -1;
-            if(tutorialText){
-            tutorialText.GetComponent<MeshRenderer>().enabled = false;
-        }
+            if (tutorialText)
+            {
+                tutorialText.GetComponent<MeshRenderer>().enabled = false;
+            }
         }
 
     }
