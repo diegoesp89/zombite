@@ -70,8 +70,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1345772729814906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.11, y: -2.99, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 4.39, y: 2.2, z: 0}
+  m_LocalScale: {x: 0.482841, y: 1, z: 1}
   m_Children:
   - {fileID: 4435793519090564}
   m_Father: {fileID: 0}
@@ -98,8 +98,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1049400892037054}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.0086786, z: -0.58}
-  m_LocalScale: {x: 1, y: -2.209486, z: 1}
+  m_LocalPosition: {x: 0, y: -0.39, z: -0.287}
+  m_LocalScale: {x: 1, y: -1.3967181, z: 0.85902554}
   m_Children: []
   m_Father: {fileID: 4435793519090564}
   m_RootOrder: 0
@@ -110,7 +110,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1525878273326370}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -322,7 +322,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0

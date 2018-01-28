@@ -439,13 +439,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.AddAnimationClip
         - HutongGames.PlayMaker.Actions.PlayAnimation
+        - HutongGames.PlayMaker.Actions.InvokeMethod
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000006000000
-        actionHashCodes: 12193b004f383600
+        - 
+        actionEnabled: 000001
+        actionIsOpen: 000001
+        actionStartIndex: 00000000060000000d000000
+        actionHashCodes: 12193b004f38360059f9a004
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -461,6 +463,14 @@ MonoBehaviour:
           gameObject:
             useVariable: 0
             name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: audioControl
             tooltip: 
             showInInspector: 0
             networkSync: 0
@@ -484,6 +494,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: openingDoor
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: MonoBehaviour
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: playDoorSound
         fsmObjectParams:
         - useVariable: 0
           name: 
@@ -502,6 +524,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0.3
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmIntParams:
         - useVariable: 0
           name: 
@@ -522,6 +556,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -535,7 +581,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000018000000120000001000000010000000110000001400000012000000070000000f000000170000001700000001000000
+        paramDataType: 1400000018000000120000001000000010000000110000001400000012000000070000000f0000001700000017000000010000001400000012000000120000000f000000110000000f00000011000000
         paramName:
         - gameObject
         - animationClip
@@ -550,8 +596,15 @@ MonoBehaviour:
         - finishEvent
         - loopEvent
         - stopOnExit
-        paramDataPos: 00000000000000000000000000000000010000000000000001000000010000000000000000000000000000000100000004000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000001000000
+        - gameObject
+        - behaviour
+        - methodName
+        - delay
+        - repeating
+        - repeatDelay
+        - cancelOnExit
+        paramDataPos: 0000000000000000000000000000000001000000000000000100000001000000000000000000000000000000010000000400000002000000020000000300000001000000010000000200000002000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000
     - name: Open
       description: 
       colorIndex: 0
@@ -722,13 +775,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.AddAnimationClip
         - HutongGames.PlayMaker.Actions.PlayAnimation
+        - HutongGames.PlayMaker.Actions.InvokeMethod
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000006000000
-        actionHashCodes: 12193b004f383600
+        - 
+        actionEnabled: 000001
+        actionIsOpen: 000001
+        actionStartIndex: 00000000060000000d000000
+        actionHashCodes: 12193b004f38360059f9a004
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -744,6 +799,14 @@ MonoBehaviour:
           gameObject:
             useVariable: 0
             name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: audioControl
             tooltip: 
             showInInspector: 0
             networkSync: 0
@@ -767,6 +830,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: closingDoor
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: MonoBehaviour
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: playDoorSound
         fsmObjectParams:
         - useVariable: 0
           name: 
@@ -785,6 +860,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0.3
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmIntParams:
         - useVariable: 0
           name: 
@@ -805,6 +892,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -818,7 +917,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000018000000120000001000000010000000110000001400000012000000070000000f000000170000001700000001000000
+        paramDataType: 1400000018000000120000001000000010000000110000001400000012000000070000000f0000001700000017000000010000001400000012000000120000000f000000110000000f00000011000000
         paramName:
         - gameObject
         - animationClip
@@ -833,8 +932,15 @@ MonoBehaviour:
         - finishEvent
         - loopEvent
         - stopOnExit
-        paramDataPos: 00000000000000000000000000000000010000000000000001000000010000000000000000000000000000000100000004000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000001000000
+        - gameObject
+        - behaviour
+        - methodName
+        - delay
+        - repeating
+        - repeatDelay
+        - cancelOnExit
+        paramDataPos: 0000000000000000000000000000000001000000000000000100000001000000000000000000000000000000010000000400000002000000020000000300000001000000010000000200000002000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000
     - name: Change Cursor
       description: 
       colorIndex: 0
@@ -1136,7 +1242,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0

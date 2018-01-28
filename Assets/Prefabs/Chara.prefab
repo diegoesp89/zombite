@@ -139,7 +139,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1557061462311254}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.74, y: 1.59, z: 0}
+  m_LocalPosition: {x: -1.87, y: 0.42000747, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 4057751020876318}
@@ -470,6 +470,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.IntAdd
         - HutongGames.PlayMaker.Actions.IntAdd
         - HutongGames.PlayMaker.Actions.InvokeMethod
+        - HutongGames.PlayMaker.Actions.InvokeMethod
         customNames:
         - 
         - 
@@ -477,10 +478,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101010101
-        actionIsOpen: 010100000000
-        actionStartIndex: 0000000002000000070000000c0000000f00000012000000
-        actionHashCodes: d97b72025f91350468fece05603dd905603dd90559f9a004
+        - 
+        actionEnabled: 01010101010101
+        actionIsOpen: 01010000000001
+        actionStartIndex: 0000000002000000070000000c0000000f0000001200000019000000
+        actionHashCodes: d97b72025f91350468fece05603dd905603dd90559f9a00459f9a004
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -514,6 +516,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 1557061462311254}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: audioControl
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -559,11 +569,35 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: changeToZombiesMusic
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: MonoBehaviour
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: playTransformationSound
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         - useVariable: 0
           name: 
           tooltip: 
@@ -626,6 +660,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -637,7 +683,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000013000000140000001200000011000000010000000700000014000000120000001200000011000000010000001000000010000000010000001000000010000000010000001400000012000000120000000f000000110000000f00000011000000
+        paramDataType: 1400000013000000140000001200000011000000010000000700000014000000120000001200000011000000010000001000000010000000010000001000000010000000010000001400000012000000120000000f000000110000000f000000110000001400000012000000120000000f000000110000000f00000011000000
         paramName:
         - gameObject
         - storeResult
@@ -664,8 +710,15 @@ MonoBehaviour:
         - repeating
         - repeatDelay
         - cancelOnExit
-        paramDataPos: 00000000000000000100000000000000000000000000000001000000020000000100000002000000010000000500000000000000010000000600000002000000030000000700000003000000030000000400000000000000020000000100000003000000
-        paramByteDataSize: 00000000000000000000000000000000000000000100000004000000000000000000000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000000000000000000000000000000000000000000
+        - gameObject
+        - behaviour
+        - methodName
+        - delay
+        - repeating
+        - repeatDelay
+        - cancelOnExit
+        paramDataPos: 0000000000000000010000000000000000000000000000000100000002000000010000000200000001000000050000000000000001000000060000000200000003000000070000000300000003000000040000000000000002000000010000000300000004000000050000000600000002000000040000000300000005000000
+        paramByteDataSize: 0000000000000000000000000000000000000000010000000400000000000000000000000000000000000000010000000000000000000000010000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     - name: ColliderZombieCheck
       description: 
       colorIndex: 0
@@ -2636,7 +2689,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101
-        actionIsOpen: 010001
+        actionIsOpen: 010101
         actionStartIndex: 000000000200000007000000
         actionHashCodes: d97b72029c512400a4c8bf00
         unityObjectParams: []
@@ -2646,7 +2699,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 0}
+          value: {fileID: 1557061462311254}
         - useVariable: 1
           name: collider
           tooltip: 
@@ -2752,15 +2805,17 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetFsmBool
         - HutongGames.PlayMaker.Actions.IntAdd
         - HutongGames.PlayMaker.Actions.SetAnimatorBool
+        - HutongGames.PlayMaker.Actions.InvokeMethod
         customNames:
         - 
         - 
         - 
         - 
-        actionEnabled: 01010101
-        actionIsOpen: 01010101
-        actionStartIndex: 0000000002000000070000000a000000
-        actionHashCodes: d97b720268fece05603dd9055f913504
+        - 
+        actionEnabled: 0101010101
+        actionIsOpen: 0000010101
+        actionStartIndex: 0000000002000000070000000a0000000f000000
+        actionHashCodes: d97b720268fece05603dd9055f91350459f9a004
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -2794,6 +2849,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 1557061462311254}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: audioControl
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -2819,11 +2882,35 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: isZombie
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: MonoBehaviour
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: playTransformationSound
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmIntParams:
         - useVariable: 1
           name: humans
@@ -2850,6 +2937,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -2861,7 +2960,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001300000014000000120000001200000011000000010000001000000010000000010000001400000012000000110000000100000007000000
+        paramDataType: 1400000013000000140000001200000012000000110000000100000010000000100000000100000014000000120000001100000001000000070000001400000012000000120000000f000000110000000f00000011000000
         paramName:
         - gameObject
         - storeResult
@@ -2878,8 +2977,15 @@ MonoBehaviour:
         - Value
         - everyFrame
         - everyFrameOption
-        paramDataPos: 000000000000000001000000000000000100000000000000000000000000000001000000010000000200000002000000010000000200000003000000
-        paramByteDataSize: 000000000000000000000000000000000000000000000000010000000000000000000000010000000000000000000000000000000100000004000000
+        - gameObject
+        - behaviour
+        - methodName
+        - delay
+        - repeating
+        - repeatDelay
+        - cancelOnExit
+        paramDataPos: 00000000000000000100000000000000010000000000000000000000000000000100000001000000020000000200000001000000020000000300000003000000030000000400000000000000020000000100000003000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000001000000000000000000000001000000000000000000000000000000010000000400000000000000000000000000000000000000000000000000000000000000
     - name: ColliderZombieCheck
       description: 
       colorIndex: 0
@@ -3122,13 +3228,13 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: {fileID: 1557061462311254}
+        value: {fileID: 0}
       - useVariable: 1
         name: spriteVar
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: {fileID: 0}
+        value: {fileID: 1557061462311254}
       objectVariables: []
       materialVariables: []
       textureVariables: []

@@ -12,6 +12,10 @@ public class WinScreenBehavior : MonoBehaviour
     public AudioClip MusicaInicio;
     public AudioClip MusicaZombies;
     public AudioClip MusicaWin;
+
+    public AudioClip doorSound;
+    public AudioClip transformationSound;
+    public AudioClip plankSound;
     // Use this for initialization
     void Start()
     {
@@ -48,5 +52,20 @@ public class WinScreenBehavior : MonoBehaviour
     {
         musicControl.clip = MusicaZombies;
         audioControl.Play();
+    }
+
+     public void playDoorSound()
+    {
+        audioControl.PlayOneShot(doorSound);
+    }
+
+    public void playTransformationSound()
+    {
+        audioControl.PlayOneShot(transformationSound);
+    }
+
+    public void playPlankSound()
+    {
+        audioControl.PlayOneShot(plankSound);
     }
 }
