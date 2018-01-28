@@ -11,6 +11,7 @@ public class victoryAndLose : MonoBehaviour
     public int humanDead;
     public GameObject victoryScreen;
 
+    public WinScreenBehavior audioRefence;
 
     void OnGUI()
     {
@@ -31,8 +32,10 @@ public class victoryAndLose : MonoBehaviour
         if (FsmVariables.GlobalVariables.GetFsmInt("humans").Value == 0)
         {
             Debug.Log("Ganaste");
+            audioRefence.changeToWinMusic();
             victoryScreen.GetComponent<MeshRenderer>().enabled = true;
             victoryScreen.GetComponent<MeshCollider>().enabled = true;
+            FsmVariables.GlobalVariables.GetFsmInt("humans").Value = -1;
         }
 
     }
