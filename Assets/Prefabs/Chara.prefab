@@ -370,7 +370,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 154.67969
+        x: 298.6797
         y: 104.640625
         width: 120
         height: 32
@@ -382,7 +382,7 @@ MonoBehaviour:
           name: MOUSE OVER
           isSystemEvent: 1
           isGlobal: 0
-        toState: Change Cursor
+        toState: Check clicks available
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -454,7 +454,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 432.85938
+        x: 576.8594
         y: 223.70312
         width: 100
         height: 16
@@ -671,7 +671,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 415.6797
+        x: 559.6797
         y: 114.671875
         width: 169
         height: 48
@@ -770,8 +770,8 @@ MonoBehaviour:
         stringParams:
         - cantTurn
         - 
-        - cantTurn
-        - cantTurn
+        - 
+        - 
         - becomeZombie
         byteData: 0000
         arrayParamSizes: 
@@ -800,7 +800,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 267
+        x: 411
         y: 209
         width: 100
         height: 16
@@ -852,7 +852,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 56
+        x: 200
         y: 203
         width: 164
         height: 48
@@ -975,6 +975,97 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 000000000000000001000000000000000000000000000000010000000200000003000000000000000200000000000000
         paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
+    - name: Check clicks available
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 52
+        y: 140.86719
+        width: 175
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: noClicks
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Touched
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: clicks
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Change Cursor
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.IntCompare
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 09faa102
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: clicksAvailable
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - noClicks
+        - noClicks
+        - clicks
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 100000001000000017000000170000001700000001000000
+        paramName:
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 000000000100000000000000010000000200000000000000
+        paramByteDataSize: 000000000000000000000000000000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -1001,6 +1092,12 @@ MonoBehaviour:
       isSystemEvent: 0
       isGlobal: 0
     - name: checkInfectiousness
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: clicks
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: noClicks
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions: []

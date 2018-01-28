@@ -42,7 +42,8 @@ GameObject:
   - component: {fileID: 114239439010924292}
   - component: {fileID: 111945620190484922}
   - component: {fileID: 82746111748393596}
-  m_Layer: 0
+  - component: {fileID: 65320440777709770}
+  m_Layer: 10
   m_Name: Door
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -56,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1028902051024158}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1686106, y: -0.56, z: 0}
+  m_LocalPosition: {x: 0.44, y: -0.56, z: 0}
   m_LocalScale: {x: 1.5928482, y: 1, z: 1.5928481}
   m_Children:
   - {fileID: 4159997676980758}
@@ -89,7 +90,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 179e38f950782ca44989bb0283e22653, type: 2}
+  - {fileID: 2100000, guid: d1efc9503ed714f499eb77355c1825ae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -115,6 +116,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1149502511007646}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65320440777709770
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1149502511007646}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9999998, y: 1, z: 1}
+  m_Center: {x: 0.000000014901161, y: 0, z: 0}
 --- !u!65 &65816915379652822
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -125,8 +138,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.567672, z: 1}
-  m_Center: {x: 0, y: 0.283836, z: 0}
+  m_Size: {x: 2.3673494, y: 1.567672, z: 12.22375}
+  m_Center: {x: 0.6836738, y: 0.283836, z: 0.874372}
 --- !u!82 &82746111748393596
 AudioSource:
   m_ObjectHideFlags: 1
@@ -146,7 +159,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 2.8461103
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -1123,7 +1136,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0

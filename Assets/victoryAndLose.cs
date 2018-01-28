@@ -11,6 +11,9 @@ public class victoryAndLose : MonoBehaviour
     public int humanDead;
     public GameObject victoryScreen;
     public GameObject victoryText;
+    public int clicksAvailables;
+
+    public GameObject tutorialText;
 
     public WinScreenBehavior audioRefence;
 
@@ -25,6 +28,8 @@ public class victoryAndLose : MonoBehaviour
         FsmVariables.GlobalVariables.GetFsmInt("humans").Value = humanCount;
         FsmVariables.GlobalVariables.GetFsmGameObject("derecha").Value = GameObject.FindGameObjectsWithTag("Right")[0];
         FsmVariables.GlobalVariables.GetFsmGameObject("izquierda").Value = GameObject.FindGameObjectsWithTag("Left")[0];
+        FsmVariables.GlobalVariables.GetFsmInt("clicksAvailable").Value = clicksAvailables;
+        
     }
 
     // Update is called once per frame
@@ -38,6 +43,9 @@ public class victoryAndLose : MonoBehaviour
             victoryScreen.GetComponent<MeshCollider>().enabled = true;
             victoryText.GetComponent<MeshRenderer>().enabled = true;
             FsmVariables.GlobalVariables.GetFsmInt("humans").Value = -1;
+            if(tutorialText){
+            tutorialText.GetComponent<MeshRenderer>().enabled = false;
+        }
         }
 
     }

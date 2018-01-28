@@ -53,6 +53,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   humanCount: 4
+  humanDead: 0
+  victoryScreen: {fileID: 0}
+  victoryText: {fileID: 0}
+  clicksAvailables: 1
+  audioRefence: {fileID: 0}
 --- !u!114 &114829076277722362
 MonoBehaviour:
   m_ObjectHideFlags: 1
